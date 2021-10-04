@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header,
+.main,
+.er { 
+    min-width: 320px;
+}
+
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+header {
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Main Nav Styles */
+
+.main-nav  {
+    height: 15vh;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--purple);
+}
+
+.main-nav__logo {
+   max-width: 100px;
+}
+
+.main-nav__image {
+    width: 100%;
+}
+
+.main-nav__profile {
+    padding: 5px;
+}
+
+.main-nav__profile-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+
+.home-main {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/img/mapa-blog.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.footer {
+    padding: 40px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--dark-blue);
+}
+
+
+
+
+
+.paes-main {
+    display: grid;
+}
+
+.paes-news-container {
+    padding: 20px 0px;
+    background-color: #e6e9ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paes-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.paes-news-img-container {
+    text-align: center;
+}
+
+.paes-news-img-container img {
+    width: 90%;
+}
+
+.paes-news-info-container {
+    padding: 10px 40px;
+}
+
+.paes-news-info-container p {
+    margin-bottom: 35px;
+}
+
+.paes-posts-container {
+    padding: 10px;
+}
+
+
+
+.paes-button {
+    padding: 10px 20px;
+    font-size: 12px;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.paes-button:hover {
+    background-color: var(--white);
+    color: dodgerblue;
+}
+
+
+
+/* paes Styles */
+
+.paes-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.paes-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+.paes-posts-container .post-container img {
+    width: 100%;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+
+:root {
+    --purple: rgb(185, 145, 107);
+    --white: #FFFFFF;
+    --dark-blue: rgb(185, 145, 107);
+    --light-blue: dodgerblue; 
+    --black: #000000;
+    --light-black: #393d3f;
+    --primary-grey: #e5e5e5;
+    --light-grey: #ccc;
+    --dark-grey: grey;
+    --secondary-gray: #8E9DAE;
+    --primary-white: white;
+}
